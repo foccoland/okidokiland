@@ -36,13 +36,29 @@ Purtroppo, però, l'altro lato della medaglia espone i seguenti lati negativi:
 - *gas fee* richieste decisamente alte per la sua creazione (*minting*);
 - trasferire intere collezioni diventa complicato;
 - impossibile annullare un pagamento;
+- supporta solo metadati statici (necessario crearne uno per ogni token generabile!);
 - impossibile combinare più token per ottenerne uno completamente nuovo (e.g.: terre e costruzioni).
 </br>
 
 Lo standard ERC1155 risolve questi problemi poichè **è un token che può rappresentare più token** (fungibili e non).
 Per effettuare un paragone: se una land è rappresentata dall'ERC721, l'intero gioco/mondo può essere rappresentato dall'ERC1155, e al suo interno vi saranno funzioni e metodi per effettuare il minting di più terre e costruzioni.
 Quindi l'ERC1155 è un singolo contratto capace di effettuare un *multi-token minting*.
-Inoltre diventa possibile annullare un pagamento, le *gas fee* sono inferiori del 90% (rendendo possibile ai più l'acquisto di un sottotipo di *token*) e acquistare più tipi di token in una sola chiamata.
+Inoltre:
+- diventa possibile annullare un pagamento;
+- le *gas fee* sono inferiori del 90% (rendendo possibile ai più l'acquisto di un sottotipo di *token*);
+- acquistare più tipi di token in una sola chiamata;
+- sono collegati a più URI (uno per tipologia);
+- supportano un numero illimitato di token;
+- non memorizzano metadati aggiuntivi (come i nomi dei file).
 
-Di contro, diventa più complesso gestire la proprietà di un token. La specifica dell'ERC1155 non è ancora così
+Di contro, diventa più complesso gestire la proprietà di un token, anche perchè non è in effetti enumerabile. La specifica dell'ERC1155 non è ancora così
 robusta sotto quest'aspetto, contrariamente all'ERC721.
+
+## Conclusioni
+
+
+L'ERC721 si dimostra meno flessibile ma più solido in termini di garanzie, più costoso ma anche di più immediata comprensione per chiunque entri nel mondo degli NFT e delle blockchain.
+</br>
+
+L'ERC1155 è nettamente più personalizzabile, garantisce prezzi inferiori e flessibilità, ottimo quindi per grandi mercati.
+Tuttavia è consigliabile adoperare maggiori controlli per la gestione delle proprietà.
