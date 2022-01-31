@@ -1,0 +1,48 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "OkiDokiLandInterface",
+  "sourceName": "contracts/OkiDokiLandBuilding.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint8",
+          "name": "_landId",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint8",
+          "name": "_buildingId",
+          "type": "uint8"
+        }
+      ],
+      "name": "buildOnLand",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint8",
+          "name": "_landId",
+          "type": "uint8"
+        }
+      ],
+      "name": "getBuildingByLand",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
